@@ -2,16 +2,32 @@ import React from 'react'
 import style from './Header.module.css'
 import { Button } from 'antd';
 import { Link } from 'react-router-dom';
+import { Content } from 'antd/es/layout/layout';
 
 const HeaderButtons = () => {
+  const buttons = [
+    {
+      url:'/SignIn',
+      content: 'Log In',
+      buttonType: 'text'
+    },
+    {
+      url:'/SignUp',
+      content: 'Sign Up',
+      buttonType: 'primary'
+    }
+  ].map(({url,content,buttonType}) => {
+    return(
+      <>
+        <Link key={url} to={url}>
+          <Button type={buttonType} className={style.signButton}>{content}</Button>
+        </Link>
+      </>
+    )
+  }); 
   return (
-    <div className={style.buttonsBox}>
-      <Link to={"/SignIn"}>
-        <Button type='text' className={style.signButton}>Log In</Button>
-      </Link>
-      <Link to={'./SignUp'}>
-        <Button type='primary' className={style.signButton}>Sign Up</Button>
-      </Link>
+    <div className={style.buttonBox}>
+        {buttons}
     </div>
   )
 }

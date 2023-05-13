@@ -1,16 +1,11 @@
 import React from 'react'   
 import logo from '../../assets/logo-1 1.png'
 
-
-const MyLogo = ({LogoWidth,LogoHeight,LogoStyle}) => {
+const Logo = ({LogoWidth,LogoHeight,LogoStyle}) => {
   return (
     <div className={LogoStyle}>
-      <img width={LogoWidth} height={LogoHeight}  src={logo} />
+      <img width={LogoWidth} height={LogoHeight} src={logo} alt='Logo Image' />
     </div>
   )
 }
-
-export default MyLogo
-
-
-
+export default Logo
