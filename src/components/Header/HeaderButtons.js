@@ -2,7 +2,6 @@ import React from 'react'
 import style from './Header.module.css'
 import { Button } from 'antd';
 import { Link } from 'react-router-dom';
-import { Content } from 'antd/es/layout/layout';
 
 const HeaderButtons = () => {
   const buttons = [

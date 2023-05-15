@@ -22,7 +22,7 @@ function App() {
           <Header>
             <MyHeader />
           </Header>
-          <Content style={{height:'100vh'}}>
+          <Content className='content'>
             <Routes>
               <Route path={routes.becomeAnInfluencer} element={<BecomeAnInfluencer />} />
               <Route path={routes.browseInfluencers} element={<BrowseInfluencers />} />
@@ -31,7 +31,7 @@ function App() {
               <Route path={routes.signUp} element={<SignUp />} />
             </Routes>
           </Content>
-          <Footer style={{backgroundColor: 'white', padding: 0}}>
+          <Footer className='footer'>
             <MyFooter />
           </Footer>
         </Router>
