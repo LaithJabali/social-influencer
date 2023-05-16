@@ -3,7 +3,7 @@ import style from './Header.module.css'
 import Logo from '../Logo/Logo';
 import {navLinks} from './data'
 import NavBar from './NavBar';
-import HeaderButtons from './HeaderButtons';
+import CustomButtons from '../CustomButtons';
 import {buttons} from './data';
 
 const MyHeader = () => {
@@ -12,7 +12,7 @@ const MyHeader = () => {
         <div className={style.header}>
           <Logo LogoWidth={160} LogoHeight={90} LogoStyle={style.LogoStyle}/>
           <NavBar navLinks={navLinks} isFooter={false} />
-          <HeaderButtons buttons={buttons} buttonClass={style.signButton}/>
+          <CustomButtons buttons={buttons} buttonClass={style.signButton}/>
         </div>
       </div> 
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ShopInfluencerBox.module.css';
-import HeaderButtons from '../Header/HeaderButtons'
+import CustomButtons from '../CustomButtons'
 
 const ShopButton = () => {
   const button = [
@@ -10,7 +10,7 @@ const ShopButton = () => {
       buttonType: 'link'
     }];
   return (
-    <HeaderButtons buttons={button} buttonClass={styles.button} buttonShape={'round'}/>
+    <CustomButtons buttons={button} buttonClass={styles.button} buttonShape={'round'}/>
   )
 }
 export default ShopButton
