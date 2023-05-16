@@ -10,7 +10,7 @@ const MyHeader = () => {
       <div className={style.container}>
         <div className={style.header}>
           <Logo LogoWidth={160} LogoHeight={90} LogoStyle={style.LogoStyle}/>
-          <NavBar navLinks={navLinks} />
+          <NavBar navLinks={navLinks} isFooter={false} />
           <HeaderButtons />
         </div>
       </div> 

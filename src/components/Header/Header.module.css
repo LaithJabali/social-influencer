@@ -62,13 +62,19 @@
   font-size: 18px;
   line-height: 21px;
 }
+.dropdown {
+  font-size: xx-large;
+}
 
 @media only screen and (max-width: 1200px) {
-  .header nav ul {
+  .headerNav ul {
     display: none;
   }
-
-  .drawerIcon {
-    display: block;
+  .signButton{
+    display: none;
+  }
+  .dropdown{
+   margin-left: auto;
+   margin-right: 55px;
   }
 }

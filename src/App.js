@@ -10,13 +10,9 @@ import SignUp from './components/pages/SignUp'
 import routes from './components/pages/routes';
 import MyFooter from './components/Footer/MyFooter';
 
-
 const {Header , Content , Footer} = Layout;
-
-
 function App() {
   return (
-    
       <Layout >
         <Router>
           <Header>
@@ -36,8 +32,6 @@ function App() {
           </Footer>
         </Router>
       </Layout> 
-    
   );
 }
-
 export default App;
