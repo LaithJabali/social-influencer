@@ -4,8 +4,8 @@ import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 
 
-const HeaderButtons = ({buttons,buttonClass,buttonShape}) => {
-  const renderedButtons = buttons.map(({url,content,buttonType}) => {
+const CustomButtons = ({buttons,buttonClass}) => {
+  const renderedButtons = buttons.map(({url,content,buttonType,buttonShape}) => {
     return(
       <Link key={url} to={url}>
         <Button type={buttonType} className={buttonClass} shape={buttonShape}>{content}</Button>
@@ -19,4 +19,4 @@ const HeaderButtons = ({buttons,buttonClass,buttonShape}) => {
   )
 }
 
-export default HeaderButtons
+export default CustomButtons
