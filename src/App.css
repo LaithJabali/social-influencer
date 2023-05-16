@@ -4,3 +4,10 @@
   height: auto;
   line-height: 1.6;
 }
+.content {
+  height: 100vh;
+}
+.footer {
+  padding: 0;
+  background-color: white;
+}
