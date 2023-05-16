@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, createContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import style from './Header.module.css';
 import NavBarResponsive from './NavBarResponsive';
 import FooterNavBarResponsive from '../Footer/FooterNavBarResponsive';
 import { buttons } from './data';
+
+export const NavContext = createContext();
 
 const NavBar = ({ navLinks, isFooter }) => {
   const [isMobile, setIsMobile] = useState(false);
@@ -21,9 +23,17 @@ const NavBar = ({ navLinks, isFooter }) => {
   }, []);
 
   if (isMobile && isFooter) {
-    return <FooterNavBarResponsive navLinks={navLinks} />;
+    return (
+      <NavContext.Provider value={{ navLinks }}>
+    <FooterNavBarResponsive />
+    </NavContext.Provider>
+    );
   } else if (isMobile && !isFooter) {
-    return <NavBarResponsive navLinks={navLinks} buttons={buttons} />;
+    return (
+      <NavContext.Provider value={{ navLinks, buttons }}>
+        <NavBarResponsive />
+      </NavContext.Provider>
+    );
   }
 
   return (
