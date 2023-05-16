@@ -9,6 +9,7 @@ import SignIn from './components/pages/SignIn'
 import SignUp from './components/pages/SignUp'
 import routes from './components/pages/routes';
 import MyFooter from './components/Footer/MyFooter';
+import ShopInfluencerBox from './components/ShopInfluencerBox/ShopInfluencerBox';
 
 const {Header , Content , Footer} = Layout;
 function App() {
