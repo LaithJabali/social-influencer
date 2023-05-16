@@ -8,20 +8,21 @@ import HowItWorks from './components/pages/HowItWorks';
 import SignIn from './components/pages/SignIn'
 import SignUp from './components/pages/SignUp'
 import routes from './components/pages/routes';
+import MyFooter from './components/Footer/MyFooter';
 
 
-const {Header , Content } = Layout;
+const {Header , Content , Footer} = Layout;
 
 
 function App() {
   return (
-    <div>
-      <Layout>
+    
+      <Layout >
         <Router>
           <Header>
             <MyHeader />
           </Header>
-          <Content>
+          <Content className='content'>
             <Routes>
               <Route path={routes.becomeAnInfluencer} element={<BecomeAnInfluencer />} />
               <Route path={routes.browseInfluencers} element={<BrowseInfluencers />} />
@@ -30,9 +31,12 @@ function App() {
               <Route path={routes.signUp} element={<SignUp />} />
             </Routes>
           </Content>
+          <Footer className='footer'>
+            <MyFooter />
+          </Footer>
         </Router>
       </Layout> 
-    </div>
+    
   );
 }
 

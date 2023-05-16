@@ -16,12 +16,12 @@
   padding-left: 55px;
 }
 
-.header nav{
+.headerNav{
   margin-left: auto;
   margin-right: auto;
 }
 
-.header nav ul {
+.headerNav ul {
   display: flex;
   list-style: none;
   align-items: center;
@@ -30,11 +30,11 @@
   font-size: 16px;
 }
 
-.header nav li {
+.headerNav li {
   margin: 0 0 0 20px;
 }
 
-.header nav a {
+.headerNav a {
   color: black;
   font-family: 'Roboto';
   font-style: normal;
@@ -43,8 +43,8 @@
   line-height: 21px;
   padding: 0px 22px;
 }
-.header nav a:hover,
-.header nav a.active,
+.headerNav a:hover,
+.headerNav a.active,
 .ant-drawer nav a.active {
   color: #8122B3;
 }
