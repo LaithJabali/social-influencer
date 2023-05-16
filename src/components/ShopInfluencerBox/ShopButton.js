@@ -1,13 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import { Button } from 'antd';
 import styles from './ShopInfluencerBox.module.css';
+import HeaderButtons from '../Header/HeaderButtons'
 
 const ShopButton = () => {
+  const button = [
+    {
+      url:'/BrowseInfluencers',
+      content: 'Shop Influencers',
+      buttonType: 'link'
+    }];
   return (
-    <Link key={'ShopButton'} to={'/BrowseInfluencers'}>
-         <Button className={styles.button} type='link' shape='round'>Shop Influencers</Button>
-    </Link>
+    <HeaderButtons buttons={button} buttonClass={styles.button} buttonShape={'round'}/>
   )
 }
 export default ShopButton
