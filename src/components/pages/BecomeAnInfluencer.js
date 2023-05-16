@@ -2,7 +2,7 @@ import React from 'react'
 
 const BecomeAnInfluencer = () => {
   return (
-    <div >BecomeAnInfluencer</div>
+    <div>BecomeAnInfluencer</div>
   )
 }
 
