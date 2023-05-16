@@ -25,8 +25,8 @@ const NavBar = ({ navLinks, isFooter }) => {
   if (isMobile && isFooter) {
     return (
       <NavContext.Provider value={{ navLinks }}>
-    <FooterNavBarResponsive />
-    </NavContext.Provider>
+        <FooterNavBarResponsive />
+      </NavContext.Provider>
     );
   } else if (isMobile && !isFooter) {
     return (
