@@ -5,8 +5,8 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import BecomeAnInfluencer from './components/pages/BecomeAnInfluencer';
 import BrowseInfluencers from './components/pages/BrowseInfluencers';
 import HowItWorks from './components/pages/HowItWorks';
-import SignIn from './components/pages/SignIn'
-import SignUp from './components/pages/SignUp'
+import SignInPage from './components/pages/SignInPage'
+import SignUpPage from './components/pages/SignUpPage'
 import routes from './components/pages/routes';
 import MyFooter from './components/Footer/MyFooter';
 import ShopInfluencerBox from './components/ShopInfluencerBox/ShopInfluencerBox';
@@ -24,8 +24,8 @@ function App() {
               <Route path={routes.becomeAnInfluencer} element={<BecomeAnInfluencer />} />
               <Route path={routes.browseInfluencers} element={<BrowseInfluencers />} />
               <Route path={routes.howItWorks} element={<HowItWorks />} />
-              <Route path={routes.signIn} element={<SignIn />} />
-              <Route path={routes.signUp} element={<SignUp />} />
+              <Route path={routes.signIn} element={<SignInPage />} />
+              <Route path={routes.signUp} element={<SignUpPage />} />
             </Routes>
           </Content>
           <Footer className='footer'>
