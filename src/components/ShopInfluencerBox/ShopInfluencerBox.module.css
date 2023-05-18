@@ -65,3 +65,31 @@
         margin-right: 20px;
     }   
 }
+
+@media only screen and (max-width: 950px) { 
+    .text{
+        font-size: 20px;
+    }
+    .button{
+        font-size: 16px;
+    } 
+}
+@media only screen and (max-width: 820px) { 
+    .text{
+        font-size: 17px;
+    }
+    .button{
+        font-size: 15px;
+    } 
+}
+
+@media only screen and (max-width: 750px) { 
+    .text{
+        font-size: 15px;
+    }
+    .button{
+        font-size: 13px;
+        width: 200px;
+        height: 65px;
+    } 
+}
