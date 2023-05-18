@@ -1,11 +1,10 @@
 import React from 'react';
 import { Form } from 'antd';
-import { formItems, buttons, ForgotLink } from './data';
 import InputItemForm from './InputItemForm';
 import ButtonItemForm from './ButtonItemForm';
 import LinkItemForm from './LinkItemForm';
 
-const SignForm = () => {
+const SignForm = ({ formItems, ForgotLink, buttons }) => {
   return (
     <Form>
       <InputItemForm formItems={formItems} />

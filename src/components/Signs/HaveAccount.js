@@ -1,13 +1,12 @@
 import React from 'react';
 import Style from './Signs.module.css';
 import MyLink from './MyLink';
-import {SignUp} from './data'
 
-const HaveAccount = ({ DoU }) => {
+const HaveAccount = ({ DoU, Sign }) => {
   return (
     <div className={Style.signUpLink}>
       {DoU}
-      <MyLink Links={SignUp} />
+      <MyLink Links={Sign} />
     </div>
   );
 };

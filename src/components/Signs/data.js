@@ -13,6 +13,45 @@ export const formItems = [
     name: 'password',
     rules: [{ required: true, message: 'Please input your password!' }],
     placeholder: 'Password',
+    type: 'password',
+  },
+];
+
+export const formItemsSignUp = [
+  {
+    name: 'username',
+    rules: [{ required: true, message: 'Please input your Name!' }],
+    placeholder: 'User Name',
+    type: 'text',
+  },
+  {
+    name: 'email',
+    rules: [
+      { required: true, message: 'Please input your email!' },
+      { type: 'email', message: 'Please enter a valid email!' },
+    ],
+    placeholder: 'Email Address',
+  },
+  {
+    name: 'password',
+    rules: [{ required: true, message: 'Please input your password!' }],
+    placeholder: 'Password',
+    type: 'password',
+  },
+  {
+    name: 'phoneNumber',
+    rules: [
+      { required: true, message: 'Please input your phone number!' },
+      { type: 'number', message: 'Please enter a valid phone number!' },
+    ],
+    placeholder: 'Phone Number',
+    type: 'tel',
+  },
+  {
+    name: 'dateOfBirth',
+    rules: [{ required: true, message: 'Please input your date of birth!' }],
+    placeholder: 'Date of Birth',
+    type: 'date',
   },
 ];
 
@@ -33,10 +72,26 @@ export const ForgotLink = [
   },
 ];
 
+export const Rules = [
+  {
+    LinkClass: Style.forgotPass,
+    LinkTitle: 'Usage rules',
+    To: './Rules',
+  },
+];
+
 export const SignUp = [
   {
     LinkClass: Style.myLink,
     LinkTitle: 'Sign Up',
-    To: './signup',
+    To: '../SignUpPage',
+  },
+];
+
+export const SignIn = [
+  {
+    LinkClass: Style.myLink,
+    LinkTitle: 'Sign In',
+    To: '../SignInPage',
   },
 ];

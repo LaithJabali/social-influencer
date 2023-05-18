@@ -9,10 +9,13 @@
     box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
   }
+
+  .signUpContainer{
+    height: 1100px;
+  }
   
   .contentBox {
     max-width: 935px;
-    height: 617px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +25,6 @@
   }
   
   .title {
-    width: 173px;
     height: 61px;
     font-family: 'Avenir';
     font-weight: 800;
