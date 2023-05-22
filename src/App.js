@@ -29,6 +29,7 @@ function App() {
             </Routes>
           </Content>
           <Footer className='footer'>
+            <ShopInfluencerBox />
             <MyFooter />
           </Footer>
         </Router>
