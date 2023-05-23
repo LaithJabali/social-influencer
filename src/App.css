@@ -5,7 +5,7 @@
   line-height: 1.6;
 }
 .content {
-  height: 100vh;
+  background-color: white;
 }
 .footer {
   padding: 0;

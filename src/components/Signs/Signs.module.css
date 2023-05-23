@@ -1,0 +1,109 @@
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    height: 772px;
+    margin: 74px auto;
+    background: #F2F2F2;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+
+  .signUpContainer{
+    height: 1100px;
+  }
+  
+  .contentBox {
+    max-width: 935px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 77.5px 117.5px;
+    text-align: center;
+  }
+  
+  .title {
+    height: 61px;
+    font-family: 'Avenir';
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 85px;
+    color: #272D4E;
+    margin-bottom: 90px;
+  }
+  
+  .input {
+    width: 935px;
+    height: 72px;
+    border-radius: 36px;
+    padding-left: 37px;
+    border-color: white;
+    margin-top: 18px;
+  }
+  
+  .button {
+    width: 267px;
+    height: 72px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    background: #8122B3;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  
+  .forgotPass {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #272D4E;
+    float: right;
+    margin-bottom: 50px;
+    margin-right: 25px;
+  }
+  
+  .signUpLink {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #272D4E;
+    padding-bottom: 70px;
+  }
+  
+  .myLink {
+    color: #272D4E;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+ @media only screen and (max-width: 1200px) {
+
+  .container {
+    max-width:900px;
+  }
+  .input{
+    max-width: 735px;
+  }
+ }
+ 
+ @media only screen and (max-width: 1000px) {
+
+  .container {
+    max-width:500px;
+  }
+  .input{
+    max-width: 335px;
+  }
+  .forgotPass{
+    float: none;
+  } 
+ }
