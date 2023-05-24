@@ -10,6 +10,7 @@ import SignUpPage from './components/pages/SignUpPage'
 import routes from './components/pages/routes';
 import MyFooter from './components/Footer/MyFooter';
 import ShopInfluencerBox from './components/ShopInfluencerBox/ShopInfluencerBox';
+import InfluencerProfile from './components/pages/InfluencerProfile';
 
 const {Header , Content , Footer} = Layout;
 function App() {
@@ -26,6 +27,7 @@ function App() {
               <Route path={routes.howItWorks} element={<HowItWorks />} />
               <Route path={routes.signIn} element={<SignInPage />} />
               <Route path={routes.signUp} element={<SignUpPage />} />
+              <Route path={routes.InfluencerProfile} element={<InfluencerProfile />} />
             </Routes>
           </Content>
           <Footer className='footer'>

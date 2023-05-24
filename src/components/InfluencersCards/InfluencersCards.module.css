@@ -1,0 +1,179 @@
+.container{
+  margin-left: 131px;
+  margin-bottom: 81px;
+}
+
+.influencerCard {
+  position: relative;
+  width: 345px;
+  height: 536px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 45px 45px 0px 45px;
+  margin-right: 72px;
+  margin-top: 62px;
+}
+
+.cardImage {
+  height: 328px;
+  width: 100%;
+  border-radius: 45px 45px 0px 0px;
+}
+
+.cardContent {
+  padding: 28px 38px 43px 38px;
+}
+
+.cardName {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #272D4E;
+}
+
+.cardDescription {
+  padding-top: 28px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  color: #94A2B3;
+}
+
+.cardFollowers {
+  padding-top: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #8122B3;
+}
+
+.priceBox {
+  position: absolute;
+  left: 240px;
+  width: 105px;
+  height: 54px;
+  background: linear-gradient(99.78deg, #7C22B9 0%, #B71A80 46.02%, #DC8D41 98.85%);
+  border-radius: 10px 45px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.price {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.cardLink {
+  color: inherit;
+  cursor: pointer;
+}
+
+.carouselContainer {
+  width: 100%;
+  max-width: 1700px;
+  padding-bottom: 75px;
+}
+
+.carousel {
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+@media (max-width: 1400px) {
+  .carousel{
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .influencerCard {
+    width: 280px;
+    height: 471px;
+  }
+  .priceBox {
+    left: 180px;
+    width: 95px;
+    height: 44px;
+  }
+  .cardName {
+    font-size: 25px;
+  }
+  .cardImage {
+    height: 263px;
+  }
+  .cardDescription {
+    font-size: 20px;
+  }
+  
+  .cardFollowers {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .carousel{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .influencerCard {
+    width: 220px;
+    height: 421px;
+  }
+  .priceBox {
+    left: 130px;
+    width: 75px;
+    height: 40px;
+  }
+  .cardName {
+    font-size: 21px;
+  }
+  .cardImage {
+    height: 203px;
+  }
+  .cardDescription {
+    font-size: 15px;
+  }
+  
+  .cardFollowers {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 980px) {
+  .carousel{
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}
+
+@media (max-width: 780px) {
+  .carousel{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 685px) {
+  .carousel{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel{
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
