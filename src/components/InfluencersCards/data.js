@@ -34,27 +34,90 @@ export const influencersData = [
     description: 'Writer',
     followers: '2.3M',
     imageSrc: Group27,
-    price: 100
+    price: '5'
   },
   {
     name: '@AllisonCamile',
     description: 'Writer',
     followers: '2.3M',
     imageSrc: Group27,
-    price: '100'
+    price: '6'
   },
   {
     name: '@AllisonCamile',
     description: 'Writer',
     followers: '2.3M',
     imageSrc: Group27,
-    price: '100'
+    price: '7'
   },
   {
     name: '@AllisonCamile',
     description: 'Writer',
     followers: '2.3M',
     imageSrc: Group27,
-    price: '1000'
+    price: '8'
+  },
+  {
+    name: '@AllisonCamile',
+    description: 'Writer',
+    followers: '2.3M',
+    imageSrc: Group27,
+    price: '9'
+  },
+  {
+    name: '@AllisonCamile',
+    description: 'Writer',
+    followers: '2.3M',
+    imageSrc: Group27,
+    price: '10'
+  },
+  {
+    name: '@AllisonCamile',
+    description: 'Writer',
+    followers: '2.3M',
+    imageSrc: Group27,
+    price: '11'
+  },
+  {
+    name: '@AllisonCamile',
+    description: 'Writer',
+    followers: '2.3M',
+    imageSrc: Group27,
+    price: '12'
+  },
+  {
+    name: '@AllisonCamile',
+    description: 'Writer',
+    followers: '2.3M',
+    imageSrc: Group27,
+    price: '13'
+  },
+  {
+    name: '@AllisonCamile',
+    description: 'Writer',
+    followers: '2.3M',
+    imageSrc: Group27,
+    price: '14'
+  },
+  {
+    name: '@AllisonCamile',
+    description: 'Writer',
+    followers: '2.3M',
+    imageSrc: Group27,
+    price: '15'
+  },
+  {
+    name: '@AllisonCamile',
+    description: 'Writer',
+    followers: '2.3M',
+    imageSrc: Group27,
+    price: '16'
+  },
+  {
+    name: '@AllisonCamile',
+    description: 'Writer',
+    followers: '2.3M',
+    imageSrc: Group27,
+    price: '17'
   },
 ];

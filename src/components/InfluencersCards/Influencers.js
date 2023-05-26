@@ -4,7 +4,7 @@ import InfluencersCards from './InfluencersCards';
 import ResponsiveInfluencersCards from './ResponsiveInfluencersCards';
 
 const Influencers = () => {
-  const isMobile = useMediaQuery({ maxWidth: 1700 });
+  const isMobile = useMediaQuery({ maxWidth: 770 });
 
   return isMobile ? <ResponsiveInfluencersCards /> : <InfluencersCards />;
 };
