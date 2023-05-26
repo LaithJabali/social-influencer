@@ -1,0 +1,101 @@
+.filterContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  float: right;
+  padding-right: 10%;
+  padding-top: 55px;
+  padding-bottom: 107px; 
+}
+
+.filterButton {
+  margin-top: 20px;
+  font-size: 18px;
+  width: 227px;
+  height: 72px;
+  background: #8122B3;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.searchInput {
+  width: 545px;
+  height: 72px;
+  border-radius: 36px;
+  padding-left: 37px;
+  border-color: #EDEDED;
+  margin-top: 18px;
+  background-color: #EDEDED;
+  font-size: 18px;
+}
+
+.filterOptions {
+  display: flex;
+  width: 150px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.filterOptions a {
+  margin-bottom: 12px;
+  display: block;
+  color: #272D4E;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.filterOptions a.activeOption {
+  color: #42dd04f5;
+}
+.buttonIcon {
+  padding-right: 19px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 1100px) { 
+  .filterButton {
+    font-size: 17px;
+    width: 190px;
+    height: 62px;
+  }
+  .searchInput {
+    width: 445px;
+    height: 62px;
+  }
+}
+
+@media only screen and (max-width: 750px) { 
+  .filterButton {
+    font-size: 17px;
+    width: 170px;
+    height: 52px;
+  }
+  .searchInput {
+    width: 345px;
+    height: 52px;
+  }
+}
+@media only screen and (max-width: 600px) { 
+  .filterContainer{
+    flex-direction: column;
+  }
+  .filterButton {
+    font-size: 17px;
+    width: 170px;
+    height: 52px;
+  }
+  .searchInput {
+    width: 345px;
+    height: 52px;
+  }
+}

@@ -1,8 +1,9 @@
 import React from 'react'
+import Filter from '../Filter/Filter'
 
 const BrowseInfluencers = () => {
   return (
-    <div>BrowseInfluencers</div>
+    <Filter />
   )
 }
 
