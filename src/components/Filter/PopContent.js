@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'antd';
 import styles from './Filter.module.css';
 import { useFilterContext } from './FilterContext';
 
@@ -9,14 +10,14 @@ const PopContent = ({ filterOptions }) => {
   return (
     <div className={styles.filterOptions}>
       {filterOptions.map((option) => (
-        <a
+        <Button
           key={option.value}
           className={`${selectedFilter === option.value ? styles.activeOption : ''} ${styles.option}`}
           onClick={() => handleFilterChange(option.value)}
-          href={'#' + option.value}
+          type={selectedFilter === option.value ? 'primary' : 'link'}
         >
           {option.label}
-        </a>
+        </Button>
       ))}
     </div>
   );
