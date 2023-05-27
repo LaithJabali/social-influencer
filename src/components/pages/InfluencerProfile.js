@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Divider } from 'antd';
+import ProfileInfo from '../ProfileInfo/ProfileInfo';
 
 const InfluencerProfile = () => {
   return (
-    <div>InfluencerProfile</div>
-  )
-}
+    <>
+      <ProfileInfo />
+      <Divider />
+    </>
+  );
+};
 
-export default InfluencerProfile
+export default InfluencerProfile;
