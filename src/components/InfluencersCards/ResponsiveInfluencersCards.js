@@ -15,7 +15,7 @@ const ResponsiveInfluencersCards = () => {
   return (
     <div className={styles.carouselContainer}>
       {carousels.map((cardsData) => (
-        <CardsCarousel cardsData={cardsData} />
+        <CardsCarousel key={cardsData[0].name} cardsData={cardsData} />
       ))}
     </div>
   );

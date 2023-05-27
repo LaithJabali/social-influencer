@@ -17,8 +17,8 @@ const Cards = ({ name, description, followers, imageSrc, price }) => {
         </div>
         <img className={styles.cardImage} src={imageSrc} alt="Influencer" />
         <div className={styles.cardContent}>
-          {cardInfo.map((info, index) => (
-            <div key={index} className={info.className}>
+          {cardInfo.map((info) => (
+            <div key={info.content} className={info.className}>
               {info.content}
             </div>
           ))}
