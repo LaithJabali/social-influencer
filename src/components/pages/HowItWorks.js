@@ -1,8 +1,9 @@
 import React from 'react'
+import HowItWork from '../HowItWork/HowItWork'
 
 const HowItWorks = () => {
   return (
-    <div>HowItWorks</div>
+    <HowItWork />
   )
 }
 
