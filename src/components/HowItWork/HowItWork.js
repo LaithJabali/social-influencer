@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './HowItWork.module.css';
 import Cards from './Cards';
-import Titles from './Titles';
 
 const HowItWork = () => {
   return (
     <div className={styles.container}>
-      <Titles title={'How It Works'} subTitle={'Getting started is so simple.'} />
+      <h1 className={styles.pageTitle}>How It Works</h1>
+      <h2 className={styles.pageSubtitle}>Getting started is so simple.</h2>
       <Cards />
     </div>
   );
