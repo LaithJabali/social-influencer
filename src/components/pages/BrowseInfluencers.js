@@ -1,9 +1,14 @@
 import React from 'react'
 import Filter from '../Filter/Filter'
+import style from './Pages.module.css'
+import Influencers from '../InfluencersCards/Influencers'
 
 const BrowseInfluencers = () => {
   return (
-    <Filter />
+    <div className={style.container}>
+      <Filter />
+      <Influencers />
+    </div>
   )
 }
 
