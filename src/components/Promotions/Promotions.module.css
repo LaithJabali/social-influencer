@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 59px;
+  margin-bottom: 123px;
+}
+
+.title {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 85px;
+  color: #272D4E;
+  margin: 0;
+}
+
+.cardRow {
+  display: flex;
+  margin-top: 61px;
+  gap: 66px;
+}
+
+.card {
+  width: 345px;
+  height: 371px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 45px 45px 0px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.cardTitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #272D4E;
+}
+
+.description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  padding-top: 38px;
+  color: #94A2B3;
+}
+
+.downSection {
+  position: absolute;
+  width: 100%;
+  height: 152px;
+  background: linear-gradient(279.92deg, #8122B3 1.47%, #B71A80 44.87%, #DC8D41 100%);
+  border-radius: 0px 45px 0px 0px;
+  transform: rotate(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+}
+
+.price {
+  transform: rotate(180deg);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 138.9%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.brand {
+  margin-top: 91px;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    text-align: center;
+  }
+  .cardRow {
+    gap: 30px;
+  }
+  .card {
+    width: 300px;
+    height: 330px;
+  }
+  .description {
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 15px;
+  }
+  .price {
+    font-size: 28px;
+  }
+  .downSection {
+    height: 135px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cardRow {
+    gap: 20px;
+  }
+  .card {
+    width: 270px;
+    height: 300px;
+    text-align: center;
+  }
+  .cardTitle {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 10px;
+  }
+  .price {
+    font-size: 25px;
+  }
+  .downSection {
+    height: 120px;
+  }
+}
+
+@media (max-width: 840px) {
+  .cardRow {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .title {
+    font-size: 55px;
+  }
+}
