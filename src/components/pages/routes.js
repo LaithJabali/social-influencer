@@ -4,7 +4,8 @@ const routes = {
     howItWorks: '/HowItWorks',
     signIn: '/SignInPage',
     signUp: '/SignUpPage',
-    InfluencerProfile: '/InfluencerProfile'
+    InfluencerProfile: '/InfluencerProfile',
+    HomePage: '/'
   };
   
   export default routes;
