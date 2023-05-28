@@ -5,7 +5,7 @@ const MyLink = ({ Links }) => {
   return (
     <>
       {Links.map((item) => (
-        <Link className={item.LinkClass} to={item.To}>
+        <Link key={item.To} className={item.LinkClass} to={item.To}>
           {item.LinkTitle}
         </Link>
       ))}

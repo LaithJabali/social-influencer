@@ -1,13 +1,14 @@
 import React from 'react';
-import ShopButton from './ShopButton';
+import {button} from './data';
 import styles from './ShopInfluencerBox.module.css';
 import BoxText from './BoxText';
+import CustomButtons from '../CustomButtons'
 
 const ShopInfluencerBox = () => {
   return (
     <div className={styles.container}>
         <BoxText />
-        <ShopButton />
+        <CustomButtons buttons={button} buttonClass={styles.button} />
     </div>
   );
 };

@@ -8,6 +8,7 @@ export const formItems = [
       { type: 'email', message: 'Please enter a valid email!' },
     ],
     placeholder: 'Email Address',
+    type: 'email'
   },
   {
     name: 'password',
@@ -31,6 +32,7 @@ export const formItemsSignUp = [
       { type: 'email', message: 'Please enter a valid email!' },
     ],
     placeholder: 'Email Address',
+    type: 'email'
   },
   {
     name: 'password',
@@ -84,7 +86,7 @@ export const SignUp = [
   {
     LinkClass: Style.myLink,
     LinkTitle: 'Sign Up',
-    To: '../SignUpPage',
+    To: '../SignUp',
   },
 ];
 
@@ -92,6 +94,6 @@ export const SignIn = [
   {
     LinkClass: Style.myLink,
     LinkTitle: 'Sign In',
-    To: '../SignInPage',
+    To: '../SignIn',
   },
 ];

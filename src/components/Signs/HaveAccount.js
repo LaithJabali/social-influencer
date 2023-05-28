@@ -2,11 +2,11 @@ import React from 'react';
 import Style from './Signs.module.css';
 import MyLink from './MyLink';
 
-const HaveAccount = ({ DoU, Sign }) => {
+const HaveAccount = ({ haveAccount, sign }) => {
   return (
     <div className={Style.signUpLink}>
-      {DoU}
-      <MyLink Links={Sign} />
+      {haveAccount}
+      <MyLink Links={sign} />
     </div>
   );
 };

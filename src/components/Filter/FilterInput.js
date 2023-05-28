@@ -6,10 +6,7 @@ import { useFilterContext } from './FilterContext';
 const FilterInput = () => {
   const { selectedFilter } = useFilterContext();
   const [searchValue, setSearchValue] = useState('');
-
-  const handleSearchChange = (e) => {
-    setSearchValue(e.target.value);
-  };
+  const handleSearchChange = (e) => setSearchValue(e.target.value);
 
   return (
     <Input

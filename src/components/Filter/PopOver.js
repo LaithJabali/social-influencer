@@ -6,13 +6,9 @@ import CustomButtons from '../CustomButtons';
 import styles from './Filter.module.css';
 import { buttons } from './data';
 
-const MyPopOver = () => {
-  const [isFilterVisible, setFilterVisible] = useState(false);
-
-  const handleFilterClick = () => {
-    setFilterVisible(!isFilterVisible);
-  };
-
+const PopOver = () => {
+  const [isFilterOpen, setFilterOpen] = useState(false);
+  const handleFilterClick = () => setFilterOpen(!isFilterOpen);
   const buttonWithClickHandler = {
     ...buttons[0],
     buttonOnClick: handleFilterClick,
@@ -22,8 +18,8 @@ const MyPopOver = () => {
     <Popover
       content={<PopContent filterOptions={filterOptions} />}
       trigger="click"
-      visible={isFilterVisible}
-      onVisibleChange={handleFilterClick}
+      open={isFilterOpen}
+      onOpenChange={handleFilterClick}
       placement="bottom"
     >
       <CustomButtons buttons={[buttonWithClickHandler]} buttonClass={styles.filterButton} />
@@ -31,4 +27,4 @@ const MyPopOver = () => {
   );
 };
 
-export default MyPopOver;
+export default PopOver;
