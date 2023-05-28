@@ -3,7 +3,7 @@ import { Divider } from 'antd';
 import ProfileInfo from '../ProfileInfo/ProfileInfo';
 import Promotions from '../Promotions/Promotions';
 import style from './Pages.module.css'
-
+import InfluencerStatistics from '../InfluencerStatistics/InfluencerStatistics';
 
 const InfluencerProfile = () => {
   return (
@@ -11,6 +11,7 @@ const InfluencerProfile = () => {
       <ProfileInfo />
       <Divider className={style.driver} />
       <Promotions />
+      <InfluencerStatistics />
     </>
   );
 };
