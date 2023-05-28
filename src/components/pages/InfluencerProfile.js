@@ -2,8 +2,9 @@ import React from 'react';
 import { Divider } from 'antd';
 import ProfileInfo from '../ProfileInfo/ProfileInfo';
 import Promotions from '../Promotions/Promotions';
-import style from './Pages.module.css'
+import style from './Pages.module.css';
 import InfluencerStatistics from '../InfluencerStatistics/InfluencerStatistics';
+import MoreCards from '../InfluencerStatistics/MoreCards';
 
 const InfluencerProfile = () => {
   return (
@@ -12,6 +13,7 @@ const InfluencerProfile = () => {
       <Divider className={style.driver} />
       <Promotions />
       <InfluencerStatistics />
+      <MoreCards />
     </>
   );
 };
