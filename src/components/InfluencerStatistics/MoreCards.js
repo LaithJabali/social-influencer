@@ -37,6 +37,8 @@ const MoreCards = () => {
 
   return (
     <div className={styles.moreCards}>
+      <h1 className={styles.title}>LOOKING FOR MORE?</h1>
+      <h2 className={styles.subtitle}>Other Influencers You May Like</h2>
       <CardsCarousel cardsData={influencersData} responsiveSettings={responsiveSettings} />
     </div>
   );
