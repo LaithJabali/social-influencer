@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import GetStarted from '../GetStarted/GetStarted';
+import HowItWork from '../HowItWork/HowItWork';
+import style from './Pages.module.css';
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <>
+      <GetStarted />
+      <div className={style.howItWork}>
+        <HowItWork />
+      </div>
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;

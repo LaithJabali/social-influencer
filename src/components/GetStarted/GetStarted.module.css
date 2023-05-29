@@ -1,0 +1,96 @@
+.container {
+width: 100%;
+max-width: 800px;
+margin-left: 159px;
+}
+
+.title {
+margin-top: 181px;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 800;
+font-size: 65px;
+line-height: 85px;
+color: #272D4E;
+padding: 0;
+}
+
+.description {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+color: #94A2B3;
+padding: 0;
+margin-top: 5px;
+}
+
+.button {
+width: 267px;
+height: 72px;
+margin-top: 31px;
+background: #8122B3;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+@media (max-width: 960px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        max-width: 450px;
+    }
+
+    .title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 237px;
+        height: 62px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .button {
+        margin-left: 110px;
+        width: 217px;
+        height: 60px;
+        font-size: 16px;
+    }
+}    
