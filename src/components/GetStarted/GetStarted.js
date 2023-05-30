@@ -5,14 +5,16 @@ import { button, paragraphs } from './data';
 
 const GetStarted = () => {
   return (
-    <div className={styles.container}>
-      {paragraphs.map((paragraph) => (
-        <p key={paragraph.text} className={paragraph.className}>
-          {paragraph.text}
-        </p>
-      ))}
-      <CustomButtons buttons={button} buttonClass={styles.button} />
-    </div>
+    <>
+      <div className={styles.container}>
+        {paragraphs.map((paragraph) => (
+          <p key={paragraph.text} className={paragraph.className}>
+            {paragraph.text}
+          </p>
+        ))}
+        <CustomButtons buttons={button} buttonClass={styles.button} />
+      </div>
+    </>
   );
 };
 

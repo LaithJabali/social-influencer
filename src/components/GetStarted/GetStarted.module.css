@@ -1,96 +1,192 @@
 .container {
-width: 100%;
-max-width: 800px;
-margin-left: 159px;
+  width: 100%;
+  max-width: 800px;
+  margin-left: 159px;
 }
 
 .title {
-margin-top: 181px;
-font-family: 'Avenir';
-font-style: normal;
-font-weight: 800;
-font-size: 65px;
-line-height: 85px;
-color: #272D4E;
-padding: 0;
+  margin-top: 181px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 85px;
+  color: #272D4E;
+  padding: 0;
 }
 
 .description {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-color: #94A2B3;
-padding: 0;
-margin-top: 5px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #94A2B3;
+  padding: 0;
+  margin-top: 5px;
 }
 
 .button {
-width: 267px;
-height: 72px;
-margin-top: 31px;
-background: #8122B3;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 900;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
+  width: 267px;
+  height: 72px;
+  margin-top: 31px;
+  background: #8122B3;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 @media (max-width: 960px) {
-    .container {
-        max-width: 600px;
-    }
+  .container {
+    max-width: 600px;
+  }
 
-    .title {
-        font-size: 50px;
-    }
+  .title {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 760px) {
-    .container {
-        max-width: 450px;
-    }
+  .container {
+    max-width: 450px;
+  }
 
-    .title {
-        font-size: 45px;
-        line-height: 55px;
-    }
+  .title {
+    font-size: 45px;
+    line-height: 55px;
+  }
 
-    .description {
-        font-size: 16px;
-    }
+  .description {
+    font-size: 16px;
+  }
 
-    .button {
-        width: 237px;
-        height: 62px;
-        font-size: 17px;
-    }
+  .button {
+    width: 237px;
+    height: 62px;
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 600px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .title {
-        font-size: 40px;
-        line-height: 50px;
-    }
+  .title {
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-    .description {
-        font-size: 15px;
-    }
+  .description {
+    font-size: 15px;
+  }
 
-    .button {
-        margin-left: 110px;
-        width: 217px;
-        height: 60px;
-        font-size: 16px;
-    }
-}    
+  .button {
+    margin-left: 110px;
+    width: 217px;
+    height: 60px;
+    font-size: 16px;
+  }
+}
+
+.RightContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.FirstImageContainer {
+  position: absolute;
+  top: 159px;
+  left: 1510.36px;
+}
+
+.SecondImageContainer {
+  position: absolute;
+  top: 351.09px;
+  left: 1087px;
+}
+
+.ThirdImageContainer {
+  position: absolute;
+  top: 642.65px;
+  left: 1170.81px;
+}
+
+.FourthImageContainer {
+  position: absolute;
+  top: 455.32px;
+  left: 1671.35px;
+}
+
+.FifthImageContainer {
+  position: absolute;
+  top: 413px;
+  left: 1287px;
+}
+
+.SixthImageContainer {
+  position: absolute;
+  top: 239px;
+  left: 1540.87px;
+}
+
+.SeventhImageContainer {
+  position: absolute;
+  top: 250px;
+  left: 1145px;
+}
+
+.EighthImageContainer {
+  position: absolute;
+  top: 610px;
+  left: 1280px;
+}
+
+@media (max-width: 1900px) {    
+  .RightContainer {
+    transform: translateX(-5%);
+  }
+}
+
+@media (max-width: 1815px) {    
+  .RightContainer {
+    transform: translateX(-5%) scale(95%);
+  }
+}
+
+@media (max-width: 1780px) {    
+  .RightContainer {
+    transform: translateX(-1%) scale(75%);
+  }
+}
+
+@media (max-width: 1630px) {    
+  .RightContainer {
+    transform: translateX(-2%)  scale(70%);
+  }
+}
+
+@media (max-width: 1530px) {    
+  .RightContainer {
+    transform: translateX(-1%) scale(62.5%);
+  }
+}
+
+@media (max-width: 1445px) {    
+  .RightContainer {
+    transform: scale(58%) translateX(-1%);
+  }
+}
+
+@media (max-width: 1380px) {    
+  .RightContainer {
+    display: none;
+  }
+}
