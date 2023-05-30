@@ -6,7 +6,7 @@ const Nation = ({ influencerInfo }) => {
   return (
     <div className={styles.flagContainer}>
       <Images imgSrc={influencerInfo[0].country.flag} imgClass={styles.flag} imgAlt={'Flag'} />
-      <span className={`${styles.country} ${styles.labels}`}>United States</span>
+      <span className={`${styles.country} ${styles.labels}`}>{influencerInfo[0].country.nation}</span>
     </div>
   );
 }

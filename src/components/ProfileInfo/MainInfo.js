@@ -5,7 +5,7 @@ const MainInfo = ({ mainInformation }) => {
   return (
     <>
       {mainInformation.map(({ mainInfo: { name, description, followers } }) => (
-        <div key={name}className={styles.cardInfos}>
+        <div key={name} className={styles.cardInfos}>
           {[
             { label: 'name', value: name },
             { label: 'description', value: description },
