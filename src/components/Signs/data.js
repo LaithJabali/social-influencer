@@ -1,5 +1,6 @@
 import Style from './Signs.module.css';
 
+
 export const formItems = [
   {
     name: 'email',
@@ -8,7 +9,7 @@ export const formItems = [
       { type: 'email', message: 'Please enter a valid email!' },
     ],
     placeholder: 'Email Address',
-    type: 'email'
+    type: 'email',
   },
   {
     name: 'password',
@@ -59,7 +60,7 @@ export const formItemsSignUp = [
 
 export const buttons = [
   {
-    url: '/BecomeAnInfluencer',
+    // url: '/BecomeAnInfluencer',
     content: "Let's Go",
     buttonType: 'primary',
     buttonShape: 'round',

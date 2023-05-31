@@ -73,11 +73,26 @@
   font-size: xx-large;
 }
 
+.userName {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.userSection {
+  display: flex;
+  align-items: center; 
+  gap: 15px;
+}
+
 @media only screen and (max-width: 1200px) {
   .headerNav ul {
     display: none;
   }
   .signButton{
+    display: none;
+  }
+  .userName{
     display: none;
   }
   .dropdown{
