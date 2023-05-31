@@ -10,13 +10,7 @@ const InfluencersCards = () => {
       <Row>
         {influencersData.map((influencer) => (
           <Col key={influencer.name}>
-            <Cards
-              name={influencer.name}
-              description={influencer.description}
-              followers={influencer.followers}
-              imageSrc={influencer.imageSrc}
-              price={influencer.price}
-            />
+            <Cards data={influencer} />
           </Col>
         ))}
       </Row>

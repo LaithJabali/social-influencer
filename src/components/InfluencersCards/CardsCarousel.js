@@ -39,13 +39,7 @@ const CardsCarousel = ({ cardsData }) => {
     <Carousel className={styles.carousel} arrows={true} responsive={responsiveSettings}>
       {cardsData.map((influencer) => (
         <div key={influencer.name}>
-          <Cards
-            name={influencer.name}
-            description={influencer.description}
-            followers={influencer.followers}
-            imageSrc={influencer.imageSrc}
-            price={influencer.price}
-          />
+          <Cards data={influencer} />
         </div>
       ))}
     </Carousel>
