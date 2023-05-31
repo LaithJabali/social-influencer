@@ -2,19 +2,22 @@ import React from 'react';
 import styles from './ProfileInfo.module.css';
 import Nation from './Nation';
 import MainInfo from './MainInfo';
-import { influencerInfo } from './data';
 import LikesFollowers from './LikesFollowers';
 import ProfileImgs from './ProfileImg';
+import { useLocation } from 'react-router-dom';
 
 const ProfileInfo = () => {
+  const location = useLocation();
+  const influencer = location.state?.data;
+
   return (
     <div className={styles.container}>
-      <ProfileImgs influencerInfo={influencerInfo} />
+      <ProfileImgs influencerInfo={influencer} />
       <div className={styles.profileInfoContainer}>
-        <MainInfo mainInformation={influencerInfo} />
+        <MainInfo mainInformation={influencer} />
         <div className={styles.followersContainer}>
-          <LikesFollowers />
-          <Nation influencerInfo={influencerInfo} />
+          <LikesFollowers influencerInfo={influencer} />
+          <Nation influencerInfo={influencer} />
         </div>
       </div>
     </div>

@@ -6,12 +6,12 @@ export const navLinks = [
 
 export const buttons = [
   {
-    url:'/SignInPage',
+    url:'/SignIn',
     content: 'Log In',
     buttonType: 'text'
   },
   {
-    url:'/SignUpPage',
+    url:'/SignUp',
     content: 'Sign Up',
     buttonType: 'primary'
   }

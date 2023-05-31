@@ -1,0 +1,218 @@
+.container {
+  text-align: center;
+  margin: 58px 160px 30px 160px;
+}
+
+.pageTitle {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 70px;
+  color: #8122B3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.pageSubtitle {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 95px;
+  color: #272D4E;
+  margin: 0;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  height: 578px;
+  border: none;
+}
+
+.card:first-child {
+  margin-top: 90px;
+  width: 419.08px;
+}
+
+.card:nth-child(2) {
+  margin-top: 164px;
+  width: 431px;
+}
+
+.card:last-child {
+  margin-top: 189px;
+  width: 430px;
+}
+
+.cardImage {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage:first-child {
+  width: 419.08px;
+  height: 293px;
+}
+
+.cardImage:nth-child(2) {
+  width: 430px;
+  height: 318px;
+}
+
+.cardImage:last-child {
+  width: 430px;
+  height: 344px;
+}
+
+.cardImage img {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.cardTitle {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1;
+  text-align: left;
+  margin: 0;
+  color: #272D4E;
+  margin-top: 40px;
+}
+
+.customMargin {
+  margin-top: 15px;
+}
+
+.cardDescription {
+  width: 430px;
+  height: 120px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  padding: 0;
+  margin-top: 15px;
+  color: #94A2B3;
+}
+
+@media (max-width: 1680px) {
+  .cardContainer {
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card:first-child {
+    margin-top: 50px;
+    margin-right: 30px;
+  }
+  
+  .card:nth-child(2) {
+    margin-top: 80px;
+    margin-left: 30px;
+  }
+  
+  .card:last-child {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .pageSubtitle {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 650px) {
+  .pageSubtitle {
+    font-size: 42px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pageTitle {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .pageSubtitle {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  
+  .card {
+    height: 518px;
+  }
+  
+  .card:first-child {
+    width: 360px;
+  }
+  
+  .card:nth-child(2) {
+    width: 361px;
+  }
+  
+  .card:last-child {
+    width: 360px;
+  }
+  
+  .cardImage:first-child {
+    margin-bottom: 55px;
+    width: 310.08px;
+    height: 233px;
+  }
+  
+  .cardImage:nth-child(2) {
+    width: 3120px;
+    height: 258px;
+  }
+  
+  .cardImage:last-child {
+    width: 320px;
+    height: 284px;
+  }
+  
+  .cardTitle {
+    font-weight: 600;
+    font-size: 28px;
+  }
+  
+  .cardDescription {
+    width: 350px;
+    height: 120px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+  }
+  
+  .customMargin {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 500px) {
+  .pageTitle {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .pageSubtitle {
+    font-size: 23px;
+    line-height: 50px;
+  }
+}

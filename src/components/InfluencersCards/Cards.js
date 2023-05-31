@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './InfluencersCards.module.css';
 
-const Cards = ({ name, description, followers, imageSrc, price }) => {
+const Cards = ({ data }) => {
+  const { name, description, followers, imageSrc, price } = data;
+  
   const cardInfo = [
     { className: styles.cardName, content: name },
     { className: styles.cardDescription, content: description },
@@ -10,7 +12,7 @@ const Cards = ({ name, description, followers, imageSrc, price }) => {
   ];
 
   return (
-    <Link to="/InfluencerProfile" className={styles.cardLink}>
+    <Link to={'/InfluencerProfile'} state={{ data: data }} className={styles.cardLink}>
       <div className={styles.influencerCard}>
         <div className={styles.priceBox}>
           <span className={styles.price}>${price}</span>

@@ -1,5 +1,3 @@
-import profileImg from '../../assets/Group 27.png';
-import USA from '../../assets/download 1.png';
 
 export const influencerInfo = [
   {
