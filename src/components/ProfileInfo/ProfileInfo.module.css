@@ -1,0 +1,172 @@
+.container {
+  width: 1170px;
+  height: 696px;
+  margin-top: 74px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+}
+
+.imageContainer {
+  width: 1170px;
+  height: 536px;
+  border-radius: 45px 45px 0 45px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileInfoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+  background-color: #ffffff;
+  border-radius: 0 0 45px 45px;
+}
+
+.name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #272D4E;
+}
+
+.description {
+  margin-left: 11px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  color: #94A2B3;
+}
+
+.followers {
+  float: right;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #8122B3;
+}
+
+.followersContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 49px;
+}
+
+.iconContainer {
+  margin-left: 49px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #2236EF;
+}
+
+.counter {
+  margin-left: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #272D4E;
+}
+
+.labels {
+  margin-left: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #272D4E;
+}
+
+.flagContainer {
+  margin-left: 53px;
+}
+
+.flag {
+  width: 50px;
+  height: 31.55px;
+}
+
+.country {
+  margin-left: 21px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+  .imageContainer {
+    width: 900px;
+    height: 436px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+  .imageContainer {
+    width: 700px;
+    height: 400px;
+  }
+  .name {
+    font-size: 35px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .followers {
+    font-size: 27px;
+  }
+  .labels {
+    font-size: 22px;
+  }
+  .counter {
+    font-size: 22px;
+  }
+  .flag {
+    width: 30px;
+    height: 21.55px;
+  }
+  .icon {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 500px;
+  }
+  .imageContainer {
+    width: 500px;
+    height: 336px;
+  }
+  .cardInfos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .followersContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
