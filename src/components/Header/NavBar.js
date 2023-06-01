@@ -1,24 +1,33 @@
-import { useState, useEffect, createContext } from 'react';
+import React, { useState, useEffect, createContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import style from './Header.module.css';
 import NavBarResponsive from './NavBarResponsive';
 import FooterNavBarResponsive from '../Footer/FooterNavBarResponsive';
-import { buttons } from './data';
+import { buttons, logOut } from './data';
+import { auth } from '../config';
 
 export const NavContext = createContext();
 
 const NavBar = ({ navLinks, isFooter }) => {
   const [isMobile, setIsMobile] = useState(false);
+  const [user, setUser] = useState(null);
 
-  const handleResize = () => {
-    setIsMobile(window.innerWidth < 1200);
-  };
+  const handleResize = () => setIsMobile(window.innerWidth < 1200);
+  const handleLogout = () => auth.signOut();  
+
+  const updatedLogOut = logOut.map((item) => ({
+    ...item,
+    buttonOnClick: handleLogout,
+  }));
 
   useEffect(() => {
     handleResize();
     window.addEventListener('resize', handleResize);
+    const unsubscribe = auth.onAuthStateChanged((user) => setUser(user));
+
     return () => {
       window.removeEventListener('resize', handleResize);
+      unsubscribe();
     };
   }, []);
 
@@ -30,7 +39,7 @@ const NavBar = ({ navLinks, isFooter }) => {
     );
   } else if (isMobile && !isFooter) {
     return (
-      <NavContext.Provider value={{ navLinks, buttons }}>
+      <NavContext.Provider value={{ navLinks, buttons: user ? updatedLogOut : buttons }}>
         <NavBarResponsive />
       </NavContext.Provider>
     );

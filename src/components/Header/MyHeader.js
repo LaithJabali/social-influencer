@@ -4,21 +4,13 @@ import Logo from '../Logo/Logo';
 import { navLinks, buttons, logOut } from './data';
 import NavBar from './NavBar';
 import CustomButtons from '../CustomButtons';
-import { auth } from '../Back-End/config';
+import { auth } from '../config';
 
 const MyHeader = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((user) => {
-      if (user) {
-        // User is signed in
-        setUser(user);
-      } else {
-        // User is signed out
-        setUser(null);
-      }
-    });
+    const unsubscribe = auth.onAuthStateChanged((user) => setUser(user ? user : null));
 
     return () => {
       unsubscribe();
@@ -37,12 +29,14 @@ const MyHeader = () => {
         <div className={style.headerButtons}>
           {user ? (
             <div className={style.userSection}>
-            <div className={style.userName}>{user.displayName}</div>
-            <CustomButtons  
-              buttons={logOut.map((item)=> ({
-              ...item,
-              buttonOnClick: handleLogout
-            }))} buttonClass={style.signButton} />
+              <div className={style.userName}>{user.displayName}</div>
+              <CustomButtons
+                buttons={logOut.map((item) => ({
+                  ...item,
+                  buttonOnClick: handleLogout
+                }))}
+                buttonClass={style.signButton}
+              />
             </div>
           ) : (
             <CustomButtons buttons={buttons} buttonClass={style.signButton} />

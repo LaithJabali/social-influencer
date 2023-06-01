@@ -79,6 +79,15 @@
   color: black;
 }
 
+.menuName{
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff6b6b, #ffa39e); 
+  color: #ffffff; 
+  text-align: center;
+  border-radius: 4px;
+}
+
 .userSection {
   display: flex;
   align-items: center; 
@@ -96,7 +105,7 @@
     display: none;
   }
   .dropdown{
-   margin-left: auto;
-   margin-right: 55px;
+    margin-left: auto;
+    margin-right: 55px;
   }
 }
