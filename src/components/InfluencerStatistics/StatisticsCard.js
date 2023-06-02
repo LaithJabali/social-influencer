@@ -6,10 +6,18 @@ const StatisticsCard = ({ statisticsData }) => {
   return (
     <>
       {statisticsData.map((data) => (
-        <Card className={styles.card}>
+        <Card key={data.title} className={styles.card}>
           <div className={styles.cardTitle}>{data.title}</div>
           <div className={styles.description}>{data.description}</div>
-          {data.icons && <div className={styles.iconRow}>{data.icons}</div>}
+          {data.icons && (
+            <div className={styles.iconRow}>
+              {data.icons.map((icon, index) => (
+                <div key={icon.label} className={styles.icon}>
+                  {icon.icon}
+                </div>
+              ))}
+            </div>
+          )}
           {data.statistics && (
             <div className={styles.statRow}>
               {data.statistics.map((stat) => (

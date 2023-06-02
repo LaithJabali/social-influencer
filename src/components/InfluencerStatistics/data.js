@@ -6,9 +6,9 @@ export const statisticsData = [
     title: 'Social',
     description: 'Other social platforms this influencer is active on',
     icons: [
-      <FacebookFilled className={styles.icon} />,
-      <TwitterOutlined className={styles.icon} />,
-      <InstagramOutlined className={styles.icon} />,
+      { icon: <FacebookFilled className={styles.icon} />, label: 'facebook' },
+      { icon: <TwitterOutlined className={styles.icon} />, label: 'twitter' },
+      { icon: <InstagramOutlined className={styles.icon} />, label: 'instagram' }
     ],
   },
   {
@@ -17,7 +17,7 @@ export const statisticsData = [
     statistics: [
       { number: '1,796,147', label: 'LIKES' },
       { number: '8,470', label: 'COMMENTS' },
-      { number: '96%', label: 'ENGAGEMENT RATE' },
+      { number: '96%', label: 'ENGAGEMENT RATE' }
     ],
   },
   {
@@ -25,7 +25,7 @@ export const statisticsData = [
     description: 'Analytical history of this influencer’s promotions.',
     statistics: [
       { number: '0', label: 'SUCCESSFUL PROMOS' },
-      { number: '0', label: 'PROMOS THIS WEEK' },
+      { number: '0', label: 'PROMOS THIS WEEK' }
     ],
-  },
+  }
 ];
