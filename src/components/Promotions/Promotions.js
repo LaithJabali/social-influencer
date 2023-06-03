@@ -13,7 +13,7 @@ const Promotions = () => {
     <div className={styles.container}>
       {promotionSections.map(({ title, promotions, sectionClass }) => (
         <PromotionSection
-          key={promotions}
+          key={title}
           title={title}
           promotions={promotions}
           sectionClass={sectionClass}
