@@ -10,9 +10,9 @@ const Cards = ({ data }) => {
     { className: styles.cardDescription, content: description },
     { className: styles.cardFollowers, content: `${followers} Followers` },
   ];
-
+  const influencerProfileURL = `/InfluencerProfile/${name}`;
   return (
-    <Link to={'/InfluencerProfile'} state={{ data: data }} className={styles.cardLink}>
+    <Link to={influencerProfileURL} state={{ data: data }} className={styles.cardLink}>
       <div className={styles.influencerCard}>
         <div className={styles.priceBox}>
           <span className={styles.price}>${price}</span>

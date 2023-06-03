@@ -11,7 +11,7 @@ const StatisticsCard = ({ statisticsData }) => {
           <div className={styles.description}>{data.description}</div>
           {data.icons && (
             <div className={styles.iconRow}>
-              {data.icons.map((icon, index) => (
+              {data.icons.map((icon) => (
                 <div key={icon.label} className={styles.icon}>
                   {icon.icon}
                 </div>
