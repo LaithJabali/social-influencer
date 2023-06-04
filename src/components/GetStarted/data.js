@@ -28,7 +28,7 @@ export const paragraphs = [
   }
 ];
 
-export   const images = [
+export const images = [
   { src: image1, alt: 'First', className: styles.FirstImageContainer },
   { src: image2, alt: 'Second', className: styles.SecondImageContainer },
   { src: image3, alt: 'Third', className: styles.ThirdImageContainer },
