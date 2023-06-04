@@ -42,10 +42,21 @@
   flex-direction: column;
 }
 
-.filterOptions span {
-  margin-bottom: 8px;
+.filterOptions a {
+  margin-bottom: 12px;
+  display: block;
+  color: #272D4E;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
 }
 
+.filterOptions a.activeOption {
+  color: #42dd04f5;
+}
 .buttonIcon {
   padding-right: 19px;
   font-size: 22px;

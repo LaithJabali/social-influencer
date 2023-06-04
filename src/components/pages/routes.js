@@ -2,11 +2,9 @@ const routes = {
     becomeAnInfluencer: '/BecomeAnInfluencer',
     browseInfluencers: '/BrowseInfluencers',
     howItWorks: '/HowItWorks',
-    signIn: '/SignInPage',
-    signUp: '/SignUpPage',
-    InfluencerProfile: '/InfluencerProfile',
-    HomePage: '/'
+    signIn: '/SignIn',
+    signUp: '/SignUp',
+    InfluencerProfile: '/InfluencerProfile/:name'
   };
   
   export default routes;
-  

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Filter.module.css';
-import MyPopOver from './MyPopOver';
+import PopOver from './PopOver';
 import FilterInput from './FilterInput';
 import { FilterProvider } from './FilterContext';
 
@@ -9,7 +9,7 @@ const Filter = () => {
     <FilterProvider>
       <div className={styles.filterContainer}>
         <FilterInput />
-        <MyPopOver />
+        <PopOver />
       </div>
     </FilterProvider>
   );
