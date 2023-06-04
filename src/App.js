@@ -11,6 +11,7 @@ import routes from './components/pages/routes';
 import MyFooter from './components/Footer/MyFooter';
 import ShopInfluencerBox from './components/ShopInfluencerBox/ShopInfluencerBox';
 import InfluencerProfile from './components/pages/InfluencerProfile';
+import HomePage from './components/pages/HomePage';
 
 const {Header , Content , Footer} = Layout;
 function App() {
@@ -22,6 +23,7 @@ function App() {
           </Header>
           <Content className='content'>
             <Routes>
+              <Route path={routes.HomePage} element={<HomePage />} />
               <Route path={routes.becomeAnInfluencer} element={<BecomeAnInfluencer />} />
               <Route path={routes.browseInfluencers} element={<BrowseInfluencers />} />
               <Route path={routes.howItWorks} element={<HowItWorks />} />
