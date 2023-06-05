@@ -14,8 +14,8 @@ export const formItems = [
     name: 'password',
     rules: [{ required: true, message: 'Please input your password!' }],
     placeholder: 'Password',
-    type: 'password',
-  },
+    type: 'password'
+  }
 ];
 
 export const formItemsSignUp = [
@@ -23,7 +23,7 @@ export const formItemsSignUp = [
     name: 'username',
     rules: [{ required: true, message: 'Please input your Name!' }],
     placeholder: 'User Name',
-    type: 'text',
+    type: 'text'
   },
   {
     name: 'email',
@@ -38,7 +38,7 @@ export const formItemsSignUp = [
     name: 'password',
     rules: [{ required: true, message: 'Please input your password!' }],
     placeholder: 'Password',
-    type: 'password',
+    type: 'password'
   },
   {
     name: 'phoneNumber',
@@ -47,53 +47,52 @@ export const formItemsSignUp = [
       { type: 'number', message: 'Please enter a valid phone number!' },
     ],
     placeholder: 'Phone Number',
-    type: 'tel',
+    type: 'tel'
   },
   {
     name: 'dateOfBirth',
     rules: [{ required: true, message: 'Please input your date of birth!' }],
     placeholder: 'Date of Birth',
-    type: 'date',
-  },
+    type: 'date'
+  }
 ];
 
 export const buttons = [
   {
-    url: '/BecomeAnInfluencer',
     content: "Let's Go",
     buttonType: 'primary',
-    buttonShape: 'round',
-  },
+    buttonShape: 'round'
+  }
 ];
 
 export const ForgotLink = [
   {
     LinkClass: Style.forgotPass,
     LinkTitle: 'Forgot password?',
-    To: './ForgotPassword',
-  },
+    To: './ForgotPassword'
+  }
 ];
 
 export const Rules = [
   {
     LinkClass: Style.forgotPass,
     LinkTitle: 'Usage rules',
-    To: './Rules',
-  },
+    To: './Rules'
+  }
 ];
 
 export const SignUp = [
   {
     LinkClass: Style.myLink,
     LinkTitle: 'Sign Up',
-    To: '../SignUp',
-  },
+    To: '../SignUp'
+  }
 ];
 
 export const SignIn = [
   {
     LinkClass: Style.myLink,
     LinkTitle: 'Sign In',
-    To: '../SignIn',
-  },
+    To: '../SignIn'
+  }
 ];

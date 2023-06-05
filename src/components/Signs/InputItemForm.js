@@ -7,7 +7,7 @@ const InputItemForm = ({ formItems }) => {
     <>
       {formItems.map((item) => (
         <Form.Item key={item.name} name={item.name} rules={item.rules}>
-          <Input type={item.type} placeholder={item.placeholder} className={Style.input} />
+          <Input type={item.type} placeholder={item.placeholder} className={Style.input} onChange={item.onChange} />
         </Form.Item>
       ))}
     </>

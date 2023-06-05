@@ -4,9 +4,9 @@ import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 
 const CustomButtons = ({ buttons, buttonClass }) => {
-  const renderedButtons = buttons.map(({ url, content, buttonType, buttonShape, buttonIcon, buttonOnClick }) => {
+  const renderedButtons = buttons.map(({ url, content, buttonType, buttonShape, buttonIcon, buttonOnClick}) => {
     return (
-      <Link key={url} to={url}>
+      <Link key={content} to={url}>
         <Button
           icon={buttonIcon}
           onClick={buttonOnClick}

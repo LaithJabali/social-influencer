@@ -16,3 +16,11 @@ export const buttons = [
     buttonType: 'primary'
   }
 ];
+
+export const logOut = [
+  {
+    url:'/SignIn',
+    content: 'Log Out',
+    buttonType: 'primary'
+  }
+]
