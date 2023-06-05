@@ -5,6 +5,7 @@ import Sign from './Sign';
 import { auth } from '../config';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import routes from '../pages/routes';
 
 const initialState = {
   username: '',
@@ -67,7 +68,7 @@ const SignUp = () => {
               dateOfBirth: dateOfBirth, 
             };
             createUser(userData);
-            navigate('/');
+            navigate(routes.HomePage);
           })
           .catch((error) => {
             console.error(error);

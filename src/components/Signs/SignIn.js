@@ -5,6 +5,7 @@ import { auth } from '../config';
 import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useReducer } from 'react';
+import routes from '../pages/routes';
 
 const initialState = {
   email: '',
@@ -35,7 +36,7 @@ const SignIn = () => {
   const signIn = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((auth) => {
-        navigate('/BrowseInfluencers');
+        navigate(routes.HomePage);
       })
       .catch((error) => console.error(error));
   };
