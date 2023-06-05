@@ -1,19 +1,36 @@
 import React from 'react';
 import { formItems, buttons, ForgotLink, SignUp } from './data';
 import Sign from './Sign';
-import { useState } from 'react';
 import { auth } from '../config';
 import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import { useReducer } from 'react';
+
+const initialState = {
+  email: '',
+  password: '',
+};
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'SET_EMAIL':
+      return { ...state, email: action.payload };
+    case 'SET_PASSWORD':
+      return { ...state, password: action.payload };
+    default:
+      return state;
+  }
+};
 
 const SignIn = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  const { email, password } = state;
 
   const onChange = (event, field) => {
-    field === 'email' ? setEmail(event.target.value) : setPassword(event.target.value);
-  };  
+    dispatch({ type: `SET_${field.toUpperCase()}`, payload: event.target.value });
+  };
 
   const signIn = () => {
     signInWithEmailAndPassword(auth, email, password)
