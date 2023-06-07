@@ -10,12 +10,13 @@ const MyHeader = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((user) => setUser(user ? user : null));
-
+    const unsubscribe = auth.onAuthStateChanged((user) => user ? setTimeout(() => setUser(user), 1000) : setUser(null));
+  
     return () => {
       unsubscribe();
     };
   }, []);
+  
 
   const handleLogout = () => {
     auth.signOut();

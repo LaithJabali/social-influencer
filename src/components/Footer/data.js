@@ -6,5 +6,3 @@ export const navLinks = [
     { to: '/CU', text: 'Contact Us' },
     { to: '/SUT', text: 'support@infuee.io' }
   ];
-
-      
