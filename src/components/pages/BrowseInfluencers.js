@@ -1,13 +1,10 @@
-import React from 'react'
-import Filter from '../Filter/Filter'
-import style from './Pages.module.css'
+import React from 'react';
+import ProtectedBrowseInfluencers from './ProtectedBrowseInfluencers';
 
 const BrowseInfluencers = () => {
   return (
-    <div className={style.container}>
-      <Filter />
-    </div>
-  )
-}
+    <ProtectedBrowseInfluencers />
+  );
+};
 
-export default BrowseInfluencers
+export default BrowseInfluencers;

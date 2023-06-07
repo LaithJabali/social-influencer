@@ -5,9 +5,9 @@ const BecomeAnInfluencer = () => {
   return (
     <>
       <Result
-        status="403"
-        title="Sorry, you are not authorized to access this page."
-        subTitle="But soon you will be allowed!"
+        status="info"
+        title="Coming Soon"
+        subTitle="Stay Tuned For More Updates!"
       />
     </>
   );
