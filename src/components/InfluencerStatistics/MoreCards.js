@@ -1,29 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import CardsCarousel from '../InfluencersCards/CardsCarousel';
 import styles from './InfluencerStatistics.module.css';
-import { collection, getFirestore, onSnapshot } from 'firebase/firestore';
+import InfluencerContext from '../InfluencersContext';
 
 const MoreCards = () => {
-  const [influencersData, setInfluencersData] = useState([]);
+  const influencersData = useContext(InfluencerContext);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const db = getFirestore();
-      const influencersCollectionRef = collection(db, 'influencers');
-
-      const unsubscribe = onSnapshot(influencersCollectionRef, (querySnapshot) => {
-        const influencers = [];
-        querySnapshot.forEach((doc) => {
-          influencers.push({ id: doc.id, ...doc.data() });
-        });
-        setInfluencersData(influencers);
-      });
-
-      return unsubscribe;
-    };
-
-    fetchData();
-  }, []);
 
   const responsiveSettings = [
     {

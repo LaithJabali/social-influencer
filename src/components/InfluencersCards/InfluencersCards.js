@@ -9,7 +9,7 @@ const InfluencersCards = ({ influencersData }) => {
 
   const filteredInfluencers = influencersData.filter((influencer) => {
     if (selectedFilter === 'name') {
-      return influencer.name.includes(searchValue);
+      return influencer.name.toLowerCase().includes(searchValue.toLowerCase());
     } else if (selectedFilter === 'interests') {
       return influencer.description.toLowerCase().includes(searchValue.toLowerCase());
     } else if (selectedFilter === 'price') {
