@@ -61,8 +61,8 @@ I appreciate your help in making Social Influencer better!
 
 The following resources and libraries were used in the development of Social Influencer:
 
-[Firebase](https://firebase.google.com/)<br>
-[Ant Design](https://ant.design/)
+1. [Firebase](https://firebase.google.com/)
+2. [Ant Design](https://ant.design/)
 
 ## Deployment
 
