@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Social Influencer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Social Influencer is a web application that connects brands with social media influencers for collaborations and promotions.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+1. Clone the repository:
 
-### `npm start`
+   ```bash
+   git clone https://github.com/LaithJabali/social-influencer.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Navigate to the project directory:
+    ```bash
+    cd social-influencer
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Install the dependencies:
+    ```bash
+    npm install
 
-### `npm test`
+4. Set up the Firebase configuration:
+   1. Rename the `src/firebase.example.js` file to `src/config.js`.
+   2. Edit the `src/config.js` file and provide your Firebase configuration details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Start the development server:
+    ```bash
+    npm start
+    
+## Usage
 
-### `npm run build`
+To use the Social Influencer application, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Register or log in to your account.
+2. Browse and search for influencers based on your requirements.
+3. View detailed influencer profiles and statistics.
+4. Connect and collaborate with influencers by adding them.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. User registration and authentication. 
+2. Search and filtering of influencers based on categories, demographics, and social media platforms.
+3. Detailed influencer profiles with statistics such as followers, engagement rate, and audience demographics.
+4. Responsive design for optimal viewing on different devices.
 
-### `npm run eject`
+## Configuration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The Social Influencer application requires the following configuration:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  Firebase: Set up a Firebase project and obtain the Firebase configuration details. Update the `src/config.js` file with your Firebase configuration.  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ I welcome contributions from the community! If you'd like to contribute to the Social Influencer project, please follow these guidelines:
 
-## Learn More
+1. Fork the repository and create a new branch.
+2. Make your changes and test thoroughly.
+3. Submit a pull request explaining the changes you've made.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I appreciate your help in making Social Influencer better!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Credits 
 
-### Code Splitting
+The following resources and libraries were used in the development of Social Influencer:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Firebase](https://firebase.google.com/)<br>
+[Ant Design](https://ant.design/)
 
-### Analyzing the Bundle Size
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The Social Influencer application is deployed at [Link](soon)
 
-### Making a Progressive Web App
+## Contact Information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For any questions or inquiries, please contact me:
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Name: Laith Jabali<br>
+Email: [laithkingjabali@gmail.com](mailto:laithkingjabali@gmail.com)<br>
+Linkedin: [laith jabali](https://www.linkedin.com/in/laith-jabali-1b1361249/)
