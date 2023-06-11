@@ -4,13 +4,15 @@ import styles from './InfluencersCards.module.css';
 
 const Cards = ({ data }) => {
   const { name, description, followers, imageSrc, price } = data;
-  
+
   const cardInfo = [
     { className: styles.cardName, content: name },
     { className: styles.cardDescription, content: description },
     { className: styles.cardFollowers, content: `${followers} Followers` },
   ];
+
   const influencerProfileURL = `/InfluencerProfile/${name}`;
+
   return (
     <Link to={influencerProfileURL} state={{ data: data }} className={styles.cardLink}>
       <div className={styles.influencerCard}>

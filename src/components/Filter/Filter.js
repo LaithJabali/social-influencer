@@ -3,6 +3,7 @@ import styles from './Filter.module.css';
 import PopOver from './PopOver';
 import FilterInput from './FilterInput';
 import { FilterProvider } from './FilterContext';
+import Influencers from '../InfluencersCards/Influencers';
 
 const Filter = () => {
   return (
@@ -11,6 +12,7 @@ const Filter = () => {
         <FilterInput />
         <PopOver />
       </div>
+      <Influencers />
     </FilterProvider>
   );
 };

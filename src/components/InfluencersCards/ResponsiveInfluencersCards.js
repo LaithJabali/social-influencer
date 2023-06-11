@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './InfluencersCards.module.css';
-import { influencersData } from './data';
 import CardsCarousel from './CardsCarousel';
 
-const ResponsiveInfluencersCards = () => {
+const ResponsiveInfluencersCards = ({ influencersData }) => {
   const carousels = [];
   const numberOfCards = 5;
   const responsiveSettings = [

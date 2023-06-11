@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Input } from 'antd';
 import styles from './Filter.module.css';
 import { useFilterContext } from './FilterContext';
 
 const FilterInput = () => {
-  const { selectedFilter } = useFilterContext();
-  const [searchValue, setSearchValue] = useState('');
+  const { selectedFilter,searchValue, setSearchValue} = useFilterContext();
   const handleSearchChange = (e) => setSearchValue(e.target.value);
 
   return (

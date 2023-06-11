@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import CardsCarousel from '../InfluencersCards/CardsCarousel';
-import { influencersData } from '../InfluencersCards/data';
 import styles from './InfluencerStatistics.module.css';
+import InfluencerContext from '../InfluencersContext';
 
 const MoreCards = () => {
+  const influencersData = useContext(InfluencerContext);
+
+
   const responsiveSettings = [
     {
-      breakpoint: 2800,
+      breakpoint: 3000,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 5,
+        slidesToScroll: 4,
       },
     },
     {
